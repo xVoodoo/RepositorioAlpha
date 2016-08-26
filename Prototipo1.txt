@@ -1,0 +1,120 @@
+import java.util.Scanner;
+
+public class Prototipo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado=new Scanner(System.in);
+		
+
+			   String clave="Mortis";
+			   String pass="";
+
+			   while (clave.equals(pass)==false){
+
+			     System.out.print("Introduce la contraseña: ");
+			     pass=teclado.nextLine();
+
+			       if (clave.equals(pass)==false){
+
+			       	System.out.println("Contraseña incorrecta");
+
+
+
+			       }
+			   }
+			        System.out.println("Contraseña Correcta. Acceso permitido");
+			        
+			        
+			        System.out.println("Bienvenida Srta. Valeria, ¿Que desea hacer? \n1. Integrantes. \n2. Cuotas. \n3. Asistencia. \n4. Costo Beneficios.");
+			        
+			        
+			        
+	                int  opciones=teclado.nextInt();
+			        switch (opciones){
+			        
+			        
+			        case 1:
+			        	System.out.println("Ingrese una opcion. \n1. Agregar nuevo integrante. \n2. Quitar Integrante. \n3. Modificar Integrante. \n4. Estado de Integrante. ");
+			        	
+			        	int integrantes=teclado.nextInt();
+			        	switch (integrantes){
+			        	
+			        	case 1:
+			        	    System.out.print("Ingrese nuevo integrante");
+			        	    break;
+			        	case 2:  
+			        		System.out.print("Aqui se debe mostrar lista de los integrants para quitar");
+			        		break;
+			        	case 3: 	
+			        		System.out.print("Aqui se debe mostrar lista de integrantes para modificar datos");
+			        		break;
+			        	case 4:	
+			        		System.out.print("Aqui se debe lista de integrantes para ver el estado");
+			        		break;
+			        	}
+			        	break;
+			        case 2:
+			        	System.out.println("Ingrese una opcion. \n1. Ingresar cuota. \n2. Retirar cuota. \n3. Total dinero recaudado.");
+			        	
+			        	int cuotas=teclado.nextInt();
+			        	switch (cuotas){
+			        	
+			        	case 1:
+			        		System.out.print("Aqui se debe mostrar lista de los integrants para agregar cuota");
+			        		break;
+			        	case 2:	
+			        		System.out.print("Aqui se debe mostrar lista de los integrants para retirar cuota");
+			        		break;
+			        	case 3:
+			        		System.out.print("Aqui se debe mostrar total dinero recaudado");
+			        		break;
+			        	
+			        	}
+			        	
+			        	break;
+			        case 3:
+			        	System.out.println("Ingrese una opcion. \n1. Ingresar asistencia. \n2 Retirar asistencia. ");
+			        	
+			        	int asistencia=teclado.nextInt();
+			        	switch (asistencia){
+			        	
+			        	case 1:
+			        		System.out.print("Aqui se debe mostrar lista de los integrants para ingresar asistencia");
+			        		break;
+			        	case 2:
+			        		System.out.print("Aqui se debe mostrar lista de los integrants para retirar asistencia");
+			        		break;
+			        		
+			        	}
+			        	break;
+			        	
+			        case 4:
+			        	
+			        	System.out.println("Ingrese una opcion. \n1. Ingresar boleta. \n2. Total beneficios recaudados. ");
+			        	
+			        	int beneficios=teclado.nextInt();
+			        	switch (beneficios){
+			        	
+			        	case 1:
+			        		System.out.print("Aqui se debe ingresar boleta");
+			        		break;
+			        	case 2:
+			        		System.out.print("Aqui se debe ingresar el total e los beneficios recaudados");
+			        		break;
+			        	
+			        	}
+			        	
+			        	break;
+			        
+			  
+			        }
+			        
+			        
+			        
+			        
+			        
+			        
+			}
+		}
+	
